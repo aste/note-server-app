@@ -31,7 +31,7 @@ This README.md provides an overview of the noteServerExpressApp, including insta
    ```bash
    npm start
 
-2. The server will run on http://localhost:3001.
+2. The server will run on http://localhost:3001
 
 
 ## API Endpoints
