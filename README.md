@@ -1,8 +1,8 @@
-# noteServerExpressApp
+# note-server-app
 
 A simple note-taking backend server built with Node.js and Express.
 
-This README.md provides an overview of the noteServerExpressApp, including installation instructions, usage details, API endpoints, contribution guidelines and license information.
+This README.md provides an overview of the note-server-app, including installation instructions, usage details, API endpoints, contribution guidelines and license information.
 
 
 ## Features
@@ -15,11 +15,11 @@ This README.md provides an overview of the noteServerExpressApp, including insta
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/aste/noteServerExpress.git
+   git clone https://github.com/aste/note-server-app.git
 
 2. Navigate to the project directory:
    ```bash
-   cd noteServerExpressApp
+   cd note-server-app
 
 3. Install dependencies:
    ```bash
