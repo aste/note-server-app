@@ -21,11 +21,9 @@ This README.md provides an overview of the noteServerExpressApp, including insta
    ```bash
    cd noteServerExpressApp
 
-
 3. Install dependencies:
    ```bash
    npm install
-
 
 ## Usage
 
