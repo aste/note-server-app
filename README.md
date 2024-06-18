@@ -38,11 +38,11 @@ This README.md provides an overview of the noteServerExpressApp, including insta
 
 ## API Endpoints
 
-`GET /api/notes` - Get all notes
-`GET /api/notes/:id` - Get a note by ID
-`POST /api/notes` - Create a new note
-`PUT /api/notes/:id` - Update a note by ID
-`DELETE /api/notes/:id` - Delete a note by ID
+1. `GET /api/notes` - Get all notes
+2. `GET /api/notes/:id` - Get a note by ID
+3. `POST /api/notes` - Create a new note
+4. `PUT /api/notes/:id` - Update a note by ID
+5. `DELETE /api/notes/:id` - Delete a note by ID
 
 
 ## Contributions
