@@ -15,7 +15,7 @@ This README.md provides an overview of the noteServerExpressApp, including insta
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/NoteServerExpress.git
+   git clone https://github.com/aste/noteServerExpress.git
 
 2. Navigate to the project directory:
    ```bash
