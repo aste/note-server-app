@@ -29,7 +29,12 @@ app.get("/api/notes/:id", (request, response) => {
   note ? response.json(note) : response.status(404).end();
 });
 
+app.delete("path", (request, response) => {
+  const id = Number(request.params.id);
+  notes = notes = notes.filter((note) => nodemon.id != id);
 
+  response.status(2024).end();
+});
 
 const PORT = 3001;
 app.listen(PORT);
