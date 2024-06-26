@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+const PORT = 3001;
 
 let notes = [
   {
@@ -19,23 +20,27 @@ let notes = [
   },
 ];
 
-app.get("/", (request, response) => {
-  response.send("<h1>Hello World!<h1>");
+app.get("/api/notes", (req, res) => {
+  res.json(notes);
 });
 
-app.get("/api/notes/:id", (request, response) => {
-  const id = Number(request.params.id);
+app.get("/api/notes/:id", (req, res) => {
+  const id = Number(req.params.id);
   const note = notes.find((note) => note.id === id);
-  note ? response.json(note) : response.status(404).end();
+  note ? res.json(note) : res.status(404).end();
 });
 
-app.delete("path", (request, response) => {
-  const id = Number(request.params.id);
-  notes = notes = notes.filter((note) => nodemon.id != id);
+app.delete("/api/notes/:id", (req, res) => {
+  const id = Number(req.params.id);
+  notes = notes.filter((note) => note.id !== id);
 
-  response.status(2024).end();
+  res.status(204).end();
 });
 
-const PORT = 3001;
-app.listen(PORT);
-console.log(`Server running on port ${PORT}`);
+app.use((req, res) => {
+  res.status(404).send({ error: "unknown endpoint" });
+});
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
