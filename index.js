@@ -27,6 +27,10 @@ let notes = [
   },
 ];
 
+app.get("/", (request, response) => {
+  response.send("<h1>Hello World!!</h1>");
+});
+
 app.get("/api/notes", (req, res) => {
   res.json(notes);
 });
@@ -44,7 +48,7 @@ app.delete("/api/notes/:id", (req, res) => {
   res.status(204).end();
 });
 
-app.post("/api/notes", (req, res) => {
+app.post("/api/notes", (request, response) => {
   const body = request.body;
 
   if (!body.content) {
@@ -52,13 +56,14 @@ app.post("/api/notes", (req, res) => {
       error: "content missing",
     });
   }
-
+  
   const note = {
     content: body.content,
     important: Boolean(body.important) || false,
     id: generateId(),
   };
-
+  console.log(note)
+  
   notes = notes.concat(note);
 
   response.json(note);
